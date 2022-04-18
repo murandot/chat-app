@@ -1,0 +1,80 @@
+.wrapper{
+  display: flex;
+}
+
+
+
+/*****サイドバー*******/
+
+.side_bar{
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar_header{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #253141;
+}
+
+.header_name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create_room a{
+  text-decoration: none;
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  padding: 14px;
+}
+
+.rooms{
+  height: calc(100vh - 100px);
+  background-color: #2F3E51;
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.room{
+  margin: 20px 0 40px;
+}
+
+.room_name a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/****チャット画面******/
+
+.chat{
+  width: calc(100vw - 300px);
+  background-color: #FFFFFF;
+}
+
+.chat-header{
+  height: 100px;
+  padding: 0 40px;
+}
+
+.message{
+  height: calc(100vh - 100px - 90px);
+  background-color: #FAFAFA;
+  padding: 46px 40px 0;
+}
+
+.form{
+  height: 90px;
+  background-color: #DDDDDD;
+  padding: 20px 40px;
+}
