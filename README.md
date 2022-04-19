@@ -27,7 +27,7 @@ Things you may want to cover:
 
 ## users テーブル
 
-| Colimn             | Type   | Option      |
+| Column             | Type   | Option      |
 | ------------------ | ------ | ------------|
 | neme               | string | null: false |
 | email              | string | null: false |
@@ -41,7 +41,7 @@ Things you may want to cover:
 
 ## rooms テーブル
 
-| Colimn  | Type   | Option      |
+| Column  | Type   | Option      |
 | ------- | ------ | ------------|
 | neme    | string | null: false |
 
@@ -53,23 +53,23 @@ Things you may want to cover:
 
 ## room_users テーブル
 
-| Colimn | Type      | Option                         |
+| Column | Type      | Option                         |
 | ------ | --------- | -------------------------------|
 | user   | reference | null: false, foreign_key: true |
 | room   | reference | null: false, foreign_key: true |
 
 ### Association
 
-- belong_to :room
-- belong_to :user
+- belongs_to :room
+- belongs_to :user
 
 ## messages テーブル
 
-| Colimn  | Type      | Option                        |
+| Colnmn  | Type      | Option                        |
 | ------- | --------- | ------------------------------|
 | content | string    | null: false, foreign_key:true |
 | user    | reference | null: false, foreign_key:true |
 | room    | reference | null: false, foreign_key:true |
 
-- belong_to :room
-- belong_to :user
+- belongs_to :room
+- belongs_to :user
